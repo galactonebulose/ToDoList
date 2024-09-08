@@ -1,13 +1,95 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.to-do-list {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: radial-gradient(circle, #2e2a63, #1b163d, #100d2b);
+}
+
+
+h1 {
+  font-size: 3rem;
+  color: whitesmoke;
+}
+
+button {
+  font-size: 15px;
+  padding: 4px;
+  margin: 4px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: all 0.5s ease;
+}
+
+
+button:hover {
+  transform: scale(1.2);
+}
+
+/*
+.Addbtn {
+  background-color: hsl(120, 44%, 42%);
+  color: white;
+  padding: 5px;
+  font-size: 1.2rem;
+  border: none;
+}
+
+/*
+.Deletebtn {
+  background-color: hsl(0, 93%, 44%);
+  color: whitesmoke;
+  margin-left: 5px;
+  font-size: 1rem;
+}
+
+.Deletebtn:hover {
+  background-color: hsl(0, 54%, 52%);
+}
+*/
+
+.Movebtn {
+  color: whitesmoke;
+  font-size: 1rem;
+}
+
+/*
+.Movebtn:hover {
+  background-color: hsl(273, 90%, 63%)
+}*/
+
+
+input[type="text"] {
+  font-size: 1.2rem;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 4px;
+}
+
+ol {
+  list-style: lower-roman;
+}
+
+li {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  color: whitesmoke;
+}
+
+.text {
+  flex: 1;
 }
